@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,300;0,400;1,100;1,200;1,300&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h2{
+    padding: .5rem 0;
+
+}
+
+html{
+
+    font-family: 'poppins',sans-serif;
+    font-size: 65.5%;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    /* width: 100%; */
+    background-color:#fff;
+}
+
+
+
+
+/* navbar styling */
+
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 1.0rem 0;
+    /* background: crimson; */
+    font-family: sans-serif;
+    z-index: 10000;
+ 
+
+}
+
+.sticky{
+    background: rgb(255, 255, 255);
+    padding: .8rem 0;
+    box-shadow: 0 .5rem 2.0rem rgba(0,0,0,0.05);
+}
+
+
+
+
+.navbar .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    margin: 0 3rem;
+   
+}
+
+.max-width{
+
+    margin: auto;
+    width: 100%;
+}
+
+.navbar .logo{
+  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.logo img {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+
+color: rgb(0,255,13);
+font-size: 1.8rem;
+font-weight: 500;
+margin-left: 2.5rem;
+}
+
+.navbar .menu li a:hover{
+    cursor: pointer;
+    color: rgba(163, 163, 170, 0.897);
+
+}
+
+.burger {
+    position:absolute;
+    cursor: pointer;
+   top: .5rem;
+   left: .5rem;
+    display: none; 
+}
+
+.line {
+    width: 3.3rem;
+    background-color: rgb(0,255,13);
+    height: .4rem;
+    margin: .5rem .3rem;
+}
+
+/* home secton styling */
+
+.home{
+   display: flex;
+   background: url(/img/bg1.jpg );
+   height: 100vh;
+   color: rgba(211, 198, 198, 0.897);
+   min-height: 50rem;
+   font-family: 'Poppins',sans-serif;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   flex-wrap: wrap;
+}
+
+.home .max-width{
+    margin: auto 1rem auto 1rem;
+}
+
+.home .home-content .text-1{
+    font-size: 5rem;
+    font-weight: 300;
+    /* margin-left: .3rem; */
+    text-align: center;
+}
+.home .home-content .text-2{
+    font-size: 2rem;
+    font-weight: 200;
+    /* margin-left: .3rem; */
+    text-align: center;
+}
+.home .home-content .text-3{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-left: .3rem;
+    text-align: center;
+}
+.btn{
+    font-size: 1em;
+    color: rgb(0,255,13);
+    background:none;
+    display: inline-block;
+    padding:  1rem 4rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .3rem;
+    transition: 0.5s;
+    border: .2rem solid rgb(0,255,13);
+    border-radius: 2.5rem;
+}
+
+.btn:hover{
+    letter-spacing: .6rem;
+}
+
+
+/* about section */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+
+}
+
+.about-section{
+    background-color: blue;
+    margin-top: 10rem;
+    color: rgb(22, 16, 16);
+
+}
+
+.title{
+   
+    width: 100%;
+    padding: 0 1.5rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    color: rgb(22, 16, 16);
+}
+
+.title h2{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-family: 'poppins',sans-serif;
+    
+}
+
+.title h2::before{
+    content: attr(data-title);
+    display: block;
+    font-size: 2rem;
+    color: rgb(0,255,13);
+    font-family:'Cedarville cursive',cursive;
+    font-style: italic;
+    text-transform: capitalize;
+
+}
+
+.about-text{
+
+
+    
+    width: 50%;
+    padding: 0 1.5rem;
+    color: rgb(22, 16, 16);
+}
+
+.about-text p{
+    margin: 0 0 1.5rem;
+    font-size: 1.5rem;
+}
+
+.about-text h3{
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+}
+
+.about-text .btn{
+    margin: 1.5rem 0 0;
+}
+
+.about-img{
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.about-img .img-box{
+    position: relative;
+}
+
+.menu .content{
+
+display: flex;
+
+justify-content: center;
+
+flex-direction: row-reverse;
+
+flex-wrap: wrap;
+width: 100%;
+align-items: center;
+}
+
+.menu .content .menu-box{
+    display: flex;
+    width: 30rem;
+    margin: 4rem;
+    border: 1rem solid #fff;
+    box-shadow: 0  .5rem 3.5rem rgba(0, 0, 0, 0.151);
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.menu .content .menu-box .img-box{
+    width: 100%;
+    height: 28rem;
+    position: relative;
+
+}
+
+.menu .content .menu-box .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 1rem; */
+}
+
+
+.testi .content{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.testi .content .testi-box{
+    width: 25rem;
+    margin: 2rem;
+    border: 1.5rem solid #fff;
+    box-shadow: 0  .5rem 3.5rem rgba(0,0,0,0.08);
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testi .content .testi-box .img-box{
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+
+}
+
+.testi .content .testi-box .img-box img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:50%;
+}
+
+.testi .content .testi-box .img-txt p{
+
+    margin-top: 2rem;
+
+    color:#666
+}
+
+.testi .content .testi-box .img-txt h4{
+    margin-top: 2rem;
+    color: rgba(4, 7, 184, 0.897);
+}
+
+.i-frame{
+    width: 100%;
+}
+
+.map-wrap{
+    width: 100%;
+}
+
+
+/* footer section */
+
+.footer{
+    margin-top: 10px;
+    padding: 8rem 0 0;
+    background: url(../img/home2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    
+
+}
+
+.footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+
+.footer-item{
+    /* font-size: 1.5rem; */
+    color: rgb(196 189 189 / 91%);
+    width: calc(100%/3);
+    /* padding: 0 1.5rem; */
+    text-align: center;
+}
+
+.footer .copyright{
+    color: rgb(196 189 189 / 91%);
+    margin: 8rem 0 0;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-size: 1.4rem;
+    border-top: .1rem solid white;
+
+}

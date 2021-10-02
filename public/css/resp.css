@@ -1,0 +1,132 @@
+@media only screen and (max-width:860px) {
+
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+    html{
+      scroll-behavior: smooth;
+       
+        font-size: 60%;
+    }
+
+    .btn:hover{
+        letter-spacing: .6rem;
+    }
+  
+    .navbar  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+      position: fixed;
+        transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        background: rgba(56, 55, 55, 0.616);
+        padding: 8px 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        width: 100%;
+    }
+
+   .navbar .nav{
+      
+    width: 100%;
+      
+   align-items: center;
+      
+   display: flex;
+      
+  flex-direction: column;
+      
+
+      
+   align-content: center;
+      
+   justify-content: center;
+      
+     height: 250px;
+    }
+
+    .max-width{
+        margin: auto;
+        padding: 0 10px;
+    }
+    .burger {
+        display: block;
+    }
+
+
+    .home{
+        width: 100%;
+    }
+
+    .menu {
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+    .menu ul {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar .menu li{
+
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar .menu li a {
+
+        color: rgb(0, 255, 13);
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 0;
+        }
+
+        .h_nav {
+            height: 40px;
+            width: 100%;
+        }
+        .v_class {
+            opacity: 0;
+        }
+
+        .about .row{
+            display: block;
+
+        }
+
+
+    .about-img{
+        width: 100%;
+        align-items: center;
+        margin-top: 30px;
+
+    }
+
+    .about-text{
+        width: 100%;
+        text-align: center;
+    }  
+}
+
+@media only screen and (max-width:375px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width:375px){
+    html{
+        font-size: 40%;
+    }
+}
